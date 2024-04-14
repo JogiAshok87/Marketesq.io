@@ -1,0 +1,108 @@
+.active{
+    color:#10bd61;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  background-color:black;
+  padding:20px 30px;
+  position: sticky;
+  top :0;
+}
+
+.logo{
+    margin-left:10px;
+    color:#fff;
+}
+
+#list-item{
+    display: flex;
+    gap: 25px;
+    margin-right: 10px;
+}
+#list-item li{
+    list-style: none;
+}
+
+
+#list-item li a{
+    
+    
+    position: relative;
+    color:#ffffff;
+    font-weight: 600;
+    font-size:18px;
+    cursor: pointer;
+    transition: 0.3es ease-in-out;
+}
+
+#list-item li a:hover,
+#list-item li a.active{
+    color:#10bd61;
+}
+
+#list-item li a:hover::after,
+#list-item li a.active::after{
+    content :"";
+    width :60%;
+    height :2px;
+    background-color:#10bd61 ;
+    position:absolute;
+    bottom :-4px;
+    left :0px;
+}
+.logoutBtn{
+    padding:5px;
+    width:80px;
+    height: min-content;
+    margin-left: 10px;
+
+}
+.list-items-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mobile{
+    display: none;
+}
+#mobile{
+    color:#ffff;
+}
+
+@media screen and (max-width : 769px){
+    #list-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top:70px;
+        right:-300px;
+        height:100vh;
+        width:300px;
+        background-color: #2a3239;
+        padding :40px 0 0 10px;
+    }
+    #list-item.active{
+        right :0px;
+    }
+    #list-item li a.active{
+        margin-bottom: 25px;
+        font-weight: 600;
+        
+    }
+
+    #mobile{
+        display: block;
+    }
+
+    #mobile i{
+        font-size:30px;
+        cursor :pointer;
+    }
+
+}
