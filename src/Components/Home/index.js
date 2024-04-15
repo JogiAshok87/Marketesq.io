@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 
-// import { Card } from 'react-bootstrap';
+
 
 import 'react-slideshow-image/dist/styles.css'
 import './index.css'

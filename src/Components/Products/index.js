@@ -1,5 +1,6 @@
 
 import { FaSearch, FaCaretDown } from 'react-icons/fa';
+
 import './index.css'
 
 const Products = () =>{

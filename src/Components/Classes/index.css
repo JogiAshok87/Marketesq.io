@@ -1,11 +1,11 @@
 
-/* styles.css */
+
 .video-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px; /* Adjust spacing between items */
+  gap: 40px; 
   margin:50px 100px;
 }
 
@@ -18,9 +18,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; /* Adjust width as needed */
+  width: 50%; 
   border-radius: 10px;
-  background-color: #f0f0f0; /* Placeholder background */
+  background-color: #f0f0f0; 
 }
 
 .video-details {
@@ -51,7 +51,13 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .video-item {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
+    flex-direction: column; 
+  }
+  .video-list{
+    margin:10px 10px;
+  }
+  .video-details{
+    width:90%;
   }
   .video-placeholder {
     width: 100%;
